@@ -2,10 +2,18 @@
 const btn = document.querySelector('button');
 const btnStyles = getComputedStyle(btn);
 
+const {backgroundColor, margin, color} = btnStyles;
+
+console.log(backgroundColor, margin, color);
 
 // Troque os valores das variáveis abaixo
 let cursoAtivo = 'JavaScript';
 let cursoInativo = 'HTML';
+
+[cursoAtivo, cursoInativo] = [cursoInativo, cursoAtivo];
+
+console.log(cursoAtivo, cursoInativo);
+
 
 // Corrija o erro abaixo
 const cachorro = {
@@ -14,4 +22,4 @@ const cachorro = {
   cor: 'Amarelo'
 }
 
-const {bobCor: cor} = cachorro;
+const {cor: bobCor} = cachorro;
