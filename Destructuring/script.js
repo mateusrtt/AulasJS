@@ -1,36 +1,17 @@
-/*const cliente = {
-    nome: 'Andre',
-    compras: {
-      digitais: {
-        livros: ['Livro 1', 'Livro 2'],
-        videos: ['Video JS', 'Video HTML']
-      },
-      fisicas: {
-        cadernos: ['Caderno 1']
-      }
-    }
-  }
-  
-  
-  const {fisicas, digitais, digitais: {livros, videos}} = cliente.compras;
-
-  console.log(fisicas);
-  console.log(livros);
-  console.log(videos);
-  console.log(digitais);
+// Extraia o backgroundColor, color e margin do btn
+const btn = document.querySelector('button');
+const btnStyles = getComputedStyle(btn);
 
 
-const frutas = ['Banana', 'Uva', 'Morango'];
+// Troque os valores das variáveis abaixo
+let cursoAtivo = 'JavaScript';
+let cursoInativo = 'HTML';
 
-const [primeira, segunda, terceira] = frutas;
+// Corrija o erro abaixo
+const cachorro = {
+  nome: 'Bob',
+  raca: 'Labrador',
+  cor: 'Amarelo'
+}
 
-console.log(terceira);
-
-*/
-
-function handleKeyboard({key, keyCode}) {
-    console.log(key, keyCode);
-  }
-
-  document.addEventListener('keyup', handleKeyboard);
-  
+const {bobCor: cor} = cachorro;
